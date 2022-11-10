@@ -34,7 +34,7 @@
 #### _putchar: 
 #### prints a character 
 #### converter:
-#### converts returns string with required base conversion
+#### returns string with required base conversion
 #### iprint:
 #### prints an integer in base 10
 
