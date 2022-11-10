@@ -7,8 +7,8 @@
 
 ### %c simple char
 ### %s string
-### %d integer
-### %i more int
+### %d decimal on base 10
+### %i integer on base 10
 
  
 
