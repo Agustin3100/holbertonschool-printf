@@ -45,3 +45,7 @@
 # Flowchart
 ![Flowchart](https://i.imgur.com/jPU29Aj.png)
 
+## Authors
+<a href="https://github.com/EliasMartincorre">Marin Correa Poggio</a>
+
+<a href="https://github.com/Agustin3100">Agustin Perez Hornos</a>
