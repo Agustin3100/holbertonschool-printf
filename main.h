@@ -1,7 +1,5 @@
-#include <stdarg.h>
 #ifndef MAIN
 #define MAIN
-<<<<<<< HEAD
 #include <stdarg.h>
 #include <stdlib.h>
 #include <stdio.h>
@@ -28,9 +26,4 @@ typedef struct func
 	int printstr(va_list);
 	int printper(va_list);
 	int printk(va_list);
-=======
-int _putchar(char c);
-int  _printf(const char *format, ...);
-int iprint(unsigned int n);
->>>>>>> 55b8411d9ee75c538ca76fdf5f7c16853e0a30f5
 #endif
