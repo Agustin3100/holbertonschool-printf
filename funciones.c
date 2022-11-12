@@ -43,7 +43,7 @@ int printper(__attribute__((unused))va_list ap)
 /**
   * printstr - printed string in stdout.
   * @ap: variadic parameter.
-  * Return: Number of character printed. ap = NULL return NUll.
+  * Return: Number of character printed.= NULL return (null).
   */
 
 int printstr(va_list ap)
@@ -54,7 +54,8 @@ int printstr(va_list ap)
 	str = va_arg(ap, char *);
 	if (str == NULL)
 	{
-		return (-1);
+		write(1, "(null)", 6); 
+		return (6);
 	}
 
 	while (str[i])
