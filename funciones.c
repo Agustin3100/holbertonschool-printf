@@ -54,7 +54,7 @@ int printstr(va_list ap)
 	str = va_arg(ap, char *);
 	if (str == NULL)
 	{
-		write(1, "(null)", 6); 
+		write(1, "(null)", 6);
 		return (6);
 	}
 
