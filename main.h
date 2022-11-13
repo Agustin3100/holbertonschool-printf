@@ -17,8 +17,11 @@ int (*op_func(const char *op))(va_list);
  */
 typedef struct func
 	{
-	char p;
-	int (*f)(va_list);
+
+	char op;
+	
+	
+	int (*f)(va_list ap);
 } op_t;
 
 	int printchar(va_list ap);
@@ -26,4 +29,10 @@ typedef struct func
 	int printstr(va_list);
 	int printper(va_list);
 	int printk(va_list);
+	int iprint(va_list ap);
+	int _printint(va_list ap);
+	void _printnum(int n);
+	int _getcount(int n);
+	int printnumber(long n);
+
 #endif

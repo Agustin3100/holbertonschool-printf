@@ -12,14 +12,16 @@ int (*op_func(const char *op))(va_list)
 			{ 's', printstr},
 			{ 'c', printchar},
 			{ '%', printper},
+			{ 'd', iprint},
+			{ 'i', iprint},
 			{ '\0', NULL}
 			};
 
 		int i;
 
-		for (i = 0; ops[i].p != '\0'; i++)
+		for (i = 0; ops[i].op != '\0'; i++)
 		{
-			if (ops[i].p == *op)
+			if (ops[i].op == *op)
 			{
 				return (ops[i].f);
 			}

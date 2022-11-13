@@ -1,5 +1,6 @@
 #include <unistd.h>
 #include<stdarg.h>
+#include "main.h"
 /**
 * _putchar - write  character to stdout.
 * @c: The character to print.
@@ -45,6 +46,9 @@ int printper(__attribute__((unused))va_list ap)
   * @ap: variadic parameter.
   * Return: Number of character printed.= NULL return (null).
   */
+
+
+
 
 int printstr(va_list ap)
 {

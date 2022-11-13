@@ -1,6 +1,6 @@
 #include <stdarg.h>
 #include <stdio.h>
-#include"main.h"
+#include "main.h"
 #include<stdlib.h>
 /**
   *_printf - function print segun format.
@@ -29,6 +29,8 @@ va_start(ap, format);
 			case 's':
 			case 'c':
 			case '%':
+			case 'd':
+			case 'i':
 				ptr = op_func(&format[i]);
 				count += ptr(ap);
 				break;
@@ -49,4 +51,3 @@ va_start(ap, format);
 va_end(ap);
 return (count);
 }
-
