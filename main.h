@@ -19,8 +19,6 @@ typedef struct func
 	{
 
 	char op;
-	
-	
 	int (*f)(va_list ap);
 } op_t;
 
