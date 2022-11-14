@@ -4,19 +4,15 @@
 #include "main.h"
 
 
-void _printnum(int n)
-{
-	unsigned int m = n;
-
-	if (m / 10 != 0)
-	{
-		_printnum(m / 10);
-	}
-	_putchar(m % 10 + '0');
-}
 
 
-
+/**
+* _getcount- counts number of recursion.
+* @n: . int for comparison
+*
+* Return: On success 1.
+* On error, -1 is returned, and errno is set appropriately.
+*/
 
 int _getcount(int n)
 {
@@ -31,11 +27,23 @@ int _getcount(int n)
 	return (counter);
 }
 
+
+
+
+/**
+* printnumber - converts an int to string using putchar..
+* @n: long integer.
+*
+* Return: On success counter for int.
+* On error, -1 is returned, and errno is set appropriately.
+*/
+
 int printnumber(long n)
 {
 	int count = 0;
 
-	if (n < 0) {
+	if (n < 0)
+	{
 		_putchar('-');
 		n *= -1;
 		count++;
@@ -48,14 +56,24 @@ int printnumber(long n)
 	return (count);
 }
 
-int iprint(va_list arg)
+
+
+/**
+* iprint - prints an integer.
+* @ap: variadic argument.
+*
+* Return: counter of number..
+* On error, 1 is returned, and errno is set appropriately.
+*/
+
+int iprint(va_list ap)
 {
 	int num;
-	int count; 
+	int count;
 
-	if (arg)
+	if (ap)
 	{
-		num = va_arg(arg, int);
+		num = va_arg(ap, int);
 		if (num == 0)
 		{
 			_putchar('0');
@@ -64,6 +82,4 @@ int iprint(va_list arg)
 		count = printnumber(num);
 	}
 	return (count);
-}  
-
-
+}

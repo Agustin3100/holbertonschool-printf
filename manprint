@@ -1,0 +1,51 @@
+.TH _PRINTF "1" "November 2022" "1.0" "User Commands"
+.SH NAME
+_printf \- format and print data
+.SH SYNOPSIS
+.B _printf
+\fI\,FORMAT \/\fR[\fI\,ARGUMENT\/\fR]...
+.br
+.SH DESCRIPTION
+.\ _printf receives a format and produces an output to the standard output stream according to the received format.
+.PP
+Returns the number of characters printed.
+.SH AUTHORS
+Written by Agustin3100 and Elias Martin.
+.SH "REPORTING BUGS"
+.br
+Report any bugs to <4431@holbertonstudents.com>
+.SH COPYRIGHT
+Copyright \(co 2021 Free Software Foundation, Inc.
+License GPLv3+: GNU GPL version 3 or later <https://gnu.org/licenses/gpl.html>.
+.br
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.
+.SH NAME
+_printf \- format and print data
+.SH SYNOPSIS
+.B _printf
+\fI\,FORMAT \/\fR[\fI\,ARGUMENT\/\fR]...
+.br
+.SH DESCRIPTION
+.\ _printf receives a format and produces an output to the standard output stream according to the received format.
+.PP
+Returns the number of characters printed.
+.SH AUTHORS
+Written by Agustin3100 and Elias Martin.
+.SH "REPORTING BUGS"
+.br
+Report any bugs to <5718@holbertonstudents.com>
+.SH COPYRIGHT
+Copyright \(co 2021 Free Software Foundation, Inc.
+License GPLv3+: GNU GPL version 3 or later <https://gnu.org/licenses/gpl.html>.
+.br
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.
+	_printf("length of \\"Holberton\\" is %d", len);
+
+	return (0);
+
+}
+
+
+
